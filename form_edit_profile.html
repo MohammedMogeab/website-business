@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.css"></script>
+</head>
+<body>
+    <section class="p-6 dark:bg-gray-100 dark:text-gray-900">
+        <form novalidate="" action="" class="container flex flex-col mx-auto space-y-12">
+            <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
+                <div class="space-y-2 col-span-full lg:col-span-1">
+                    <p class="font-medium">Personal Inormation</p>
+                    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fuga autem eum!</p>
+                </div>
+                <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                    <div class="col-span-full sm:col-span-3">
+                        <label for="firstname" class="text-sm">First name</label>
+                        <input id="firstname" type="text" placeholder="First name" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-3">
+                        <label for="lastname" class="text-sm">Last name</label>
+                        <input id="lastname" type="text" placeholder="Last name" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-3">
+                        <label for="email" class="text-sm">Email</label>
+                        <input id="email" type="email" placeholder="Email" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full">
+                        <label for="address" class="text-sm">Address</label>
+                        <input id="address" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-2">
+                        <label for="city" class="text-sm">City</label>
+                        <input id="city" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-2">
+                        <label for="state" class="text-sm">State / Province</label>
+                        <input id="state" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-2">
+                        <label for="zip" class="text-sm">ZIP / Postal</label>
+                        <input id="zip" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
+                <div class="space-y-2 col-span-full lg:col-span-1">
+                    <p class="font-medium">Profile</p>
+                    <p class="text-xs">Adipisci fuga autem eum!</p>
+                </div>
+                <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                    <div class="col-span-full sm:col-span-3">
+                        <label for="username" class="text-sm">Username</label>
+                        <input id="username" type="text" placeholder="Username" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full sm:col-span-3">
+                        <label for="website" class="text-sm">Website</label>
+                        <input id="website" type="text" placeholder="https://" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300">
+                    </div>
+                    <div class="col-span-full">
+                        <label for="bio" class="text-sm">Bio</label>
+                        <textarea id="bio" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300"></textarea>
+                    </div>
+                    <div class="col-span-full">
+                        <label for="bio" class="text-sm">Photo</label>
+                        <div class="flex items-center space-x-2">
+                            <img src="https://source.unsplash.com/30x30/?random" alt="" class="w-10 h-10 dark:bg-gray-500 rounded-full dark:bg-gray-300">
+                            <button type="button" class="px-4 py-2 border rounded-md dark:border-gray-800">Change</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
