@@ -30,14 +30,6 @@ const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Toggle the navbar and overlay.
- *
- * Adds or removes the "active" class on navbar, overlay, and body when the
- * nav toggler is clicked.
- */
-/******  ec4ac148-edc7-4302-a8ba-c61663590501  *******/
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
