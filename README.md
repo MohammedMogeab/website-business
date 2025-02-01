@@ -24,12 +24,12 @@ Follow these steps to set up the project:
 
    # Team Collaboration
 
-## Contributors
+## Team
 The following roles have contributed to this project:
 
-- **🧑‍💻  ** – 
-- **👨‍💻 @MubarakAshrafAlrawy** – 
-- **👩‍💻@hfyzalswfy ** – 
+- **👨‍💻 @MubarakAshrafAlrawy** – mubarak Ashraf Alrawy
+- - **🧑‍💻@MohammedMogeab  ** –  Moahmmed Mogeab Ahmed Al-hajj
+- **👩‍💻@hfyzalswfy ** – Mohammed Ali
  
 
 ## Collaboration
