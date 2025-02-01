@@ -19,8 +19,11 @@ Follow these steps to set up the project:
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/projectweb2.git
-   cd projectweb2
+
+   git clone https://github.com/MohammedMogeab/website-business.git
+   
+cd projectweb2
+
 
    # Team Collaboration
 
@@ -34,3 +37,4 @@ The following roles have contributed to this project:
 
 ## Collaboration
 This project has been a team effort, with each member contributing their expertise in various areas, such as backend development, frontend design, database management, and quality assurance. Together, we have created a robust solution with a focus on efficiency, scalability, and user experience.
+
