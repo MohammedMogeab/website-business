@@ -21,8 +21,7 @@ Follow these steps to set up the project:
    ```bash
 
    git clone https://github.com/MohammedMogeab/website-business.git
-   
-cd projectweb2
+   cd projectweb2
 
 
    # Team Collaboration
@@ -32,7 +31,7 @@ The following roles have contributed to this project:
 
 - **👨‍💻 @MubarakAshrafAlrawy** – mubarak Ashraf Alrawy
 - - **🧑‍💻@MohammedMogeab  ** –  Moahmmed Mogeab Ahmed Al-hajj
-- **👩‍💻@hfyzalswfy ** – Mohammed Ali
+- **👩‍💻@MohammedAli12345678 ** – Mohammed Ali
  
 
 ## Collaboration
