@@ -1,0 +1,56 @@
+*   [33m85ed27a[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on master: a45ccbc merge mohammed ali
+[31m|[m[32m\[m  
+[31m|[m * [33m25f2b96[m index on master: a45ccbc merge mohammed ali
+[31m|[m[31m/[m  
+*   [33ma45ccbc[m merge mohammed ali
+[33m|[m[34m\[m  
+[33m|[m * [33me8103b9[m[33m ([m[1;31morigin/projectscards[m[33m)[m the Mogifiy Page projects.html
+[33m|[m * [33m869a999[m[33m ([m[1;32mprojectscards[m[33m)[m the Modifiy page Project..
+[33m|[m * [33m5a41d7a[m Add the div of page project.html
+[33m|[m *   [33m5391bfa[m Merge branch 'master' of https://github.com/MohammedMogeab/website-business into projectscards
+[33m|[m [35m|[m[36m\[m  
+[33m|[m * [36m|[m [33m580b80a[m  Deleted the Hello
+* [36m|[m [36m|[m [33md91c60e[m add contact page
+* [36m|[m [36m|[m   [33m5e2dc32[m[33m ([m[1;31morigin/master[m[33m)[m Merge pull request #3 from MohammedMogeab/mubarak
+[1;31m|[m[1;32m\[m [36m\[m [36m\[m  
+[1;31m|[m * [36m\[m [36m\[m   [33macbf289[m[33m ([m[1;31morigin/mubarak[m[33m)[m Merge branch 'master' into mubarak
+[1;31m|[m [1;33m|[m[1;31m\[m [36m\[m [36m\[m  
+[1;31m|[m [1;33m|[m[1;31m/[m [36m/[m [36m/[m  
+[1;31m|[m[1;31m/[m[1;33m|[m [36m|[m [36m|[m   
+* [1;33m|[m [36m|[m [36m|[m [33m6fc226a[m[33m ([m[1;32m5391bfa[m[33m)[m modify file path for blog in index.html
+* [1;33m|[m [36m|[m [36m|[m [33m9df4faf[m  add to Readme
+* [1;33m|[m [36m|[m [36m|[m [33m00c645e[m  add to Readme
+* [1;33m|[m [36m|[m [36m|[m [33m07c7904[m edit info in readme
+* [1;33m|[m [36m|[m [36m|[m [33m334de54[m the Modifiy page Project..
+* [1;33m|[m [36m|[m [36m|[m [33m7a6af6e[m Add the div of page project.html
+* [1;33m|[m [36m|[m [36m|[m [33m90c23fa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m add file to index.txt
+[36m|[m [1;33m|[m[36m_[m[36m|[m[36m/[m  
+[36m|[m[36m/[m[1;33m|[m [36m|[m   
+[36m|[m * [36m|[m [33m55f9121[m add comments bar and video image show in product
+[36m|[m * [36m|[m [33m1ae85b2[m changed the link of blog to right path
+[36m|[m[36m/[m [36m/[m  
+* [36m|[m   [33mfd72970[m[33m ([m[1;32mshow[m[33m)[m  solve merge
+[1;35m|[m[1;36m\[m [36m\[m  
+[1;35m|[m * [36m|[m [33m6c207a6[m Delete Massege Mohammed Hi
+[1;35m|[m [36m|[m[36m/[m  
+[1;35m|[m * [33m4c7db2f[m  add mohamed to header
+[1;35m|[m * [33m38391c8[m add mohammed mogeab
+[1;35m|[m * [33m490b1ec[m Update README.md
+[1;35m|[m * [33m95e72eb[m Update README.md
+[1;35m|[m * [33m2518ef6[m Update README.md
+* [1;36m|[m [33ma1b5387[m modified the lik in readme file
+[1;36m|[m[1;36m/[m  
+* [33m9ff4a2a[m  update some feature
+* [33m576ae5f[m  add some info in readme file
+* [33mbbdecd8[m Add generated JSDoc documentation
+* [33mb7206ec[m  add jsdoc for all functions
+* [33ma3f3f0b[m edit the path for the index for the blog for file in index file
+* [33mcbd9f83[m add blog file to src in index file
+*   [33m778e4b9[m Merge branch 'master' of github.com:MohammedMogeab/website-business
+[31m|[m[32m\[m  
+[31m|[m * [33m45e1975[m Create README.md
+* [32m|[m [33ma0a5fd3[m  add addition files and make show product for some products
+* [32m|[m [33m2390404[m  add login page , forget page , reset page on to code project
+[32m|[m[32m/[m  
+* [33m4b711e6[m  delete some line in css
+* [33mb905a90[m initial the project
