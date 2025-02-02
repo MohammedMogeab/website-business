@@ -378,8 +378,136 @@ body.nav-active { overflow: hidden; }
 }
 
 
+/* Start filtes-categrio */
+
+.container-filter
+{
+  display: flex;
+ 
+  justify-content: space-around;
+  margin-bottom: 30px;
+
+}
+
+.filtes-categrio
+{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
+ 
+
+}
+
+.filtes-categrio .options-filter-language select
+{
+font-size: 20px;
+padding: 10px 5px;
+border-radius: 20px;
 
 
+}
+
+.filtes-categrio .options-filter-type select
+{
+font-size: 20px;
+padding: 10px 5px;
+border-radius: 20px;
+
+}
+
+.filter-search{
+  display: flex;
+
+
+  position: relative;
+  width: 300px;
+}
+
+.filter-search .input-search
+{
+border-radius: 20px;
+border: 2px solid black;
+border-color: none;
+outline: none;
+width: 100%;
+height: 40px;
+text-align: center;
+
+}
+
+.filter-search .input-search:focus
+{
+  width: 315px;
+}
+
+.filter-search i
+{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+
+
+  .container-filter
+{
+  
+  margin-bottom: 10px;
+
+}
+
+.filtes-categrio
+{
+
+  gap: 8px;
+  
+}
+
+
+.filtes-categrio .options-filter-language select
+{
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+.filtes-categrio .options-filter-type select
+{
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+  .filter-search{
+    margin-top: 15px;
+   
+  }
+
+  .filter-search .input-search
+  {
+  border-radius: 10px;
+  border: 1px solid black;
+
+  outline: none;
+  width: 100%;
+  height: 30px;
+  text-align: start;
+
+  
+  }
+
+  .filter-search .input-search:focus
+{
+  width: 100%;
+}
+}
+
+/* End filtes-categrio */
 
 /*-----------------------------------*\
   #HERO
