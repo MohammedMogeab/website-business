@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- <meta http-equiv="refresh" content="3
+  "> -->
   <!-- 
     - primary meta tags
   -->
@@ -17,6 +18,13 @@
   <!-- 
     - favicon
   -->
+
+  <!-- Link Fontaosem -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
   <!-- 
@@ -38,6 +46,7 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+  
 
 </head>
 
@@ -152,11 +161,15 @@
   <main>
     
     <section class="section project" aria-labelledby="project-label">
+        <div class="serch-box">
+          <div class="serch-input-bar"><input type="text" id="serch"><img src=""></div>
+        </div>
         <div class="container">
 
         
 
-          <ul class="grid-list">
+            <!-- <ul class="grid-list">
+
          
                 <li>
                     <a href="product_show_try.html">
@@ -194,7 +207,7 @@
       
                         </ul>
                         <div>programmer 34$$</div>
-                        <div>price 98894$</div>
+                        
                       </div>
       
                     </div>
@@ -663,7 +676,44 @@
               </li>
 
 
-          </ul>
+          </ul> -->
+           
+           <div class="card">
+            <img src="./assets/images/blog-1.jpg" alt="Apartment">
+            <div class="card-content">
+                <div class="tags">
+                    <span class="tag blue">Devlopment</span>
+                    <span class="tag red">Web Site</span>
+                    <span class="tag green">Project</span>
+                    
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>AI chating Desktop</h2>
+                        <p>with this project , chating and moving , get more fancy</p>
+                        <h3 class="price"> <span>price</span>$3,750</h3>
+                    </div>
+                 
+                </div>
+             
+             
+                <div class="details">
+                    
+                        <span><i class="fa-solid fa-comments"> 8762 <span><br>Comments</span> </i></span>
+                  
+                        <span><i class="fa-solid fa-list-check">  3236<span> <br> Rate</span></i></span>
+                   
+                        <span><i class="fa-regular fa-heart"> 345 <span><br> Likes</span></i></span>
+                   
+                        <span><i class="fa-solid fa-cart-shopping">567<span> <br>Buys </span></i></span>
+                   
+                    
+                </div>
+                <button class="send" id="send">send</button>
+            </div>
+          </div>
+
+          
 
         </div>
       </section>
