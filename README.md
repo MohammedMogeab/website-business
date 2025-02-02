@@ -144,5 +144,5 @@ If `git pull` gives a **merge conflict**, resolve it manually:
 
 ---
 
-Let your team follow this workflow to prevent conflicts and maintain a smooth GitHub collaboration! ✨
+ ✨
 
