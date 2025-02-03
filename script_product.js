@@ -11,7 +11,6 @@
 // });
 
 
-
 //change image vidio
 const video = document.getElementById("mainVidio");
 const image = document.getElementById("mainImage");
