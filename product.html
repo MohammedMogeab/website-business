@@ -284,87 +284,204 @@
 
   <div class="review-bar">
     <!-- comments html -->
-    <div class="container mt-5 mb-5" >
-      <div class="d-flex justify-content-center row">
-        <div class="d-flex flex-column col-md-8">
-          <div class="d-flex flex-row align-items-center text-left comment-top p-2 bg-white border-bottom px-4">
-            <div class="profile-image"><img class="rounded-circle" src="https://i.imgur.com/t9toMAQ.jpg" width="70">
-            </div>
-            <div class="d-flex flex-column-reverse flex-grow-0 align-items-center votings ml-1"><i
-                class="fa fa-sort-up fa-2x hit-voting"></i><span>127</span><i
-                class="fa fa-sort-down fa-2x hit-voting"></i></div>
-            <div class="d-flex flex-column ml-3">
-              <div class="d-flex flex-row post-title">
-                <h5>Is sketch 3.9.1 stable?</h5><span class="ml-2">(Jesshead)</span>
-              </div>
-              <div class="d-flex flex-row align-items-center align-content-center post-title"><span
-                  class="bdge mr-1">video</span><span class="mr-2 comments">13 comments&nbsp;</span><span
-                  class="mr-2 dot"></span><span>6 hours ago</span></div>
-            </div>
+    <div class="container mt-5 mb-5" id="reviews_comments_container">
+      <!--
+      - comments style css
+      -->
+      <div class="unique-comment-section">
+        <div class="unique-header">
+          <img src="https://via.placeholder.com/50" alt="صورة المستخدم">
+          <h2>اسم المستخدم الحالي</h2>
+        </div>
+        <div class="unique-comment-count">إجمالي التعليقات: 5</div>
+
+        <div class="unique-star-rating">
+          <span class="unique-star">★</span>
+          <span class="unique-star">★</span>
+          <span class="unique-star">★</span>
+          <span class="unique-star">★</span>
+          <span class="unique-star-empty">☆</span>
+          <span class="unique-rating-count">(4 تقييمات)</span>
+        </div>
+
+        <div class="unique-input-comment">
+          <input type="text" placeholder="اكتب تعليقك هنا...">
+          <button onclick="submitComment()">إرسال</button>
+        </div>
+
+        <div class="unique-comment">
+          <div class="unique-user">
+            <img src="https://via.placeholder.com/30" alt="صورة المستخدم">
+            <h3>اسم المستخدم 1</h3>
           </div>
-          <div class="coment-bottom bg-white p-2 px-4">
-            <div class="d-flex flex-row add-comment-section mt-4 mb-4"><img
-                class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg"
-                width="38"><input type="text" class="form-control mr-3" placeholder="Add comment"><button
-                class="btn btn-primary" type="button">Comment</button></div>
-            <div class="commented-section mt-2">
-              <div class="d-flex flex-row align-items-center commented-user">
-                <h5 class="mr-2">Corey oates</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">4 hours
-                  ago</span>
-              </div>
-              <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
-              <div class="reply-section">
-                <div class="d-flex flex-row align-items-center voting-icons"><i
-                    class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i
-                    class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">10</span><span
-                    class="dot ml-2"></span>
-                  <h6 class="ml-2 mt-1">Reply</h6>
-                </div>
-              </div>
+          <p>هذا هو نص التعليق الأول. هنا يمكنك كتابة محتوى التعليق.</p>
+          <div class="unique-time">منذ 2 ساعة</div>
+          <div class="unique-comment-footer">
+            <span class="unique-like-button">👍 10 إعجابات</span>
+            <span>5 ردود</span>
+            <button class="unique-reply-btn" onclick="toggleReplyInput(this)">✏️</button>
+          </div>
+
+          <div class="unique-reply-input">
+            <input type="text" placeholder="اكتب ردك هنا...">
+            <button onclick="submitReply(this)">إرسال رد</button>
+          </div>
+
+          <div class="unique-reply">
+            <div class="unique-user">
+              <img src="https://via.placeholder.com/30" alt="صورة المستخدم">
+              <h3>اسم المستخدم 2</h3>
             </div>
-            <div class="commented-section mt-2">
-              <div class="d-flex flex-row align-items-center commented-user">
-                <h5 class="mr-2">Samoya Johns</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">5 hours
-                  ago</span>
-              </div>
-              <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua..</span></div>
-              <div class="reply-section">
-                <div class="d-flex flex-row align-items-center voting-icons"><i
-                    class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i
-                    class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">15</span><span
-                    class="dot ml-2"></span>
-                  <h6 class="ml-2 mt-1">Reply</h6>
-                </div>
-              </div>
+            <p>هذا هو نص الرد الأول على التعليق.</p>
+            <div class="unique-time">منذ 30 دقيقة</div>
+          </div>
+
+          <div class="unique-reply" style="display: none;">
+            <div class="unique-user">
+              <img src="https://via.placeholder.com/30" alt="صورة المستخدم">
+              <h3>اسم المستخدم 3</h3>
             </div>
-            <div class="commented-section mt-2">
-              <div class="d-flex flex-row align-items-center commented-user">
-                <h5 class="mr-2">Makhaya andrew</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">10 hours
-                  ago</span>
-              </div>
-              <div class="comment-text-sm"><span>Nunc sed id semper risus in hendrerit gravida rutrum. Non odio euismod
-                  lacinia at quis risus sed. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Enim
-                  facilisis gravida neque convallis a. In mollis nunc sed id. Adipiscing elit pellentesque habitant
-                  morbi tristique senectus et netus. Ultrices mi tempus imperdiet nulla malesuada pellentesque.</span>
-              </div>
-              <div class="reply-section">
-                <div class="d-flex flex-row align-items-center voting-icons"><i
-                    class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i
-                    class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">25</span><span
-                    class="dot ml-2"></span>
-                  <h6 class="ml-2 mt-1">Reply</h6>
-                </div>
-              </div>
+            <p>هذا هو نص الرد الثاني على التعليق.</p>
+            <div class="unique-time">منذ 15 دقيقة</div>
+          </div>
+
+          <div class="unique-reply" style="display: none;">
+            <div class="unique-user">
+              <img src="https://via.placeholder.com/30" alt="صورة المستخدم">
+              <h3>اسم المستخدم 4</h3>
             </div>
+            <p>هذا هو نص الرد الثالث على التعليق.</p>
+            <div class="unique-time">منذ 5 دقيقة</div>
+          </div>
+
+          <div class="unique-more-replies" onclick="toggleReplies(this)">عرض المزيد</div>
+        </div>
+
+        <div class="unique-comment">
+          <div class="unique-user">
+            <img src="https://via.placeholder.com/30" alt="صورة المستخدم">
+            <h3>اسم المستخدم 5</h3>
+          </div>
+          <p>هذا هو نص التعليق الثاني. هنا يمكنك كتابة محتوى التعليق.</p>
+          <div class="unique-time">منذ 1 يوم</div>
+          <div class="unique-comment-footer">
+            <span class="unique-like-button">👍 5 إعجابات</span>
+            <span>2 ردود</span>
+            <button class="unique-reply-btn" onclick="toggleReplyInput(this)">✏️</button>
+          </div>
+
+          <div class="unique-reply-input">
+            <input type="text" placeholder="اكتب ردك هنا...">
+            <button onclick="submitReply(this)">إرسال رد</button>
           </div>
         </div>
+
       </div>
-    </div>
-    <!-- end comments html -->
+
+      <!--
+    - end comments 
+    -->
+      <!-- developers -->
+      <div class="Main-Devlopers-Container">
+        <h3>developers</h3>
+        <div class="unique-user-container">
+          <div class="unique-user-card" id="user1" onclick="toggleExpand(event, this)">
+              <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="صورة المستخدم 1">
+              <div class="unique-user-name">اسم المستخدم 1</div>
+              <div class="unique-icon-container">
+                  <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      
+          <div class="unique-user-card" id="user2" onclick="toggleExpand(event, this)">
+              <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="صورة المستخدم 2">
+              <div class="unique-user-name">اسم المستخدم 2</div>
+              <div class="unique-icon-container">
+                  <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      
+          <div class="unique-user-card" id="user3" onclick="toggleExpand(event, this)">
+              <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="صورة المستخدم 3">
+              <div class="unique-user-name">اسم المستخدم 3</div>
+              <div class="unique-icon-container">
+                  <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      
+          <div class="unique-user-card" id="user4" onclick="toggleExpand(event, this)">
+              <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="صورة المستخدم 4">
+              <div class="unique-user-name">اسم المستخدم 4</div>
+              <div class="unique-icon-container">
+                  <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div><!-- end developers -->
+  </div><!-- end comments html -->
+  <!-- developers teem -->
+  <div class="Main-Devlopers-teem-container">
+    <h3>Our Teem</h3>
+    <div class="unique-user-container">
+      <div class="unique-user-card" id="user1" onclick="toggleExpand(event, this)">
+          <img src="https://via.placeholder.com/50" alt="صورة المستخدم 1">
+          <div class="unique-user-name">اسم المستخدم 1</div>
+          <div class="unique-icon-container">
+              <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+  
+      <div class="unique-user-card" id="user2" onclick="toggleExpand(event, this)">
+          <img src="https://via.placeholder.com/50" alt="صورة المستخدم 2">
+          <div class="unique-user-name">اسم المستخدم 2</div>
+          <div class="unique-icon-container">
+              <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+  
+      <div class="unique-user-card" id="user3" onclick="toggleExpand(event, this)">
+          <img src="https://via.placeholder.com/50" alt="صورة المستخدم 3">
+          <div class="unique-user-name">اسم المستخدم 3</div>
+          <div class="unique-icon-container">
+              <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+  
+      <div class="unique-user-card" id="user4" onclick="toggleExpand(event, this)">
+          <img src="https://via.placeholder.com/50" alt="صورة المستخدم 4">
+          <div class="unique-user-name">اسم المستخدم 4</div>
+          <div class="unique-icon-container">
+              <a href="#" class="unique-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="unique-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="unique-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="unique-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
   </div>
+  </div>
+</div><!-- end developers teem -->
 
   <footer class="footer">
     <div class="container grid-list">
