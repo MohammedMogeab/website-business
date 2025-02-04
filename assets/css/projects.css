@@ -1,0 +1,316 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 كروت في كل صف */
+     gap: 20px;
+    width: 100%;
+    
+    max-width: 1500px;
+  } 
+  
+  .card {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 100vh;
+    transition: 0.1s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+   
+   border-radius: 10px;
+  
+    
+  }
+  
+  .content
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content span span
+  {
+    font-size: 10px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .blue {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .red {
+    background-color: #dc5360;
+    color: white;
+  }
+  
+  .green {
+    background-color: #329549;
+    color: white;
+    margin-left: auto;
+    
+   
+   
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .price span {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: black;
+    margin-top: 10px;
+    background-color:#F9F9F9;
+    padding: 10px 5px;
+  
+   
+  }
+  
+  .fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+  
+  .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    /* font-size: medium; */
+    letter-spacing: 1.5px;
+    font-size: 11px;
+  }
+  
+  details span span
+  {
+    font-weight:normal ;
+  }
+  
+  
+  
+  
+  .send 
+  {
+    /* margin: auto; */
+    /* margin-top: 5px; */
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    background-color: #007bff;
+    cursor: pointer;
+    border-color: none;
+    color: white;
+    
+  
+  }
+  
+  .send:hover
+  {
+    background-color:#2377d1 ;
+    font-size:16px ;
+    width: 100%;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* صفين في الشاشات الصغيرة */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr); /* عمود واحد في الشاشات الصغيرة جداً */
+    }
+  }
+  
+  
+
+  
+
+  /* Start container filter */
+  
+
+
+  
+.container-filter
+{
+  display: flex;
+ 
+  justify-content: space-around;
+  margin-bottom: 30px;
+
+}
+
+.filtes-categrio
+{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
+ 
+
+}
+
+.filtes-categrio .options-filter-language select
+{
+font-size: 20px;
+padding: 10px 5px;
+border-radius: 20px;
+
+
+}
+
+.filtes-categrio .options-filter-type select
+{
+font-size: 20px;
+padding: 10px 5px;
+border-radius: 20px;
+
+}
+
+.filter-search{
+  display: flex;
+
+
+  position: relative;
+  width: 300px;
+}
+
+.filter-search .input-search
+{
+border-radius: 20px;
+border: 2px solid black;
+border-color: none;
+outline: none;
+width: 100%;
+height: 40px;
+text-align: center;
+
+}
+
+.filter-search .input-search:focus
+{
+  width: 315px;
+}
+
+.filter-search i
+{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+
+
+  .container-filter
+{
+  
+  margin-bottom: 10px;
+
+}
+
+.filtes-categrio
+{
+
+  gap: 8px;
+  
+}
+
+
+.filtes-categrio .options-filter-language select
+{
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+.filtes-categrio .options-filter-type select
+{
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+  .filter-search{
+    margin-top: 15px;
+   
+  }
+
+  .filter-search .input-search
+  {
+  border-radius: 10px;
+  border: 1px solid black;
+
+  outline: none;
+  width: 100%;
+  height: 30px;
+  text-align: start;
+
+  
+  }
+
+  .filter-search .input-search:focus
+{
+  width: 100%;
+}
+}
+
+
+
+  /* End container filter */
